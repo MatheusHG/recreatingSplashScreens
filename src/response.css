@@ -1,0 +1,49 @@
+@media (max-width: 1120px){
+  .notices {
+    flex-direction: column;
+  }
+
+  .boxRight {
+    gap: 30px;
+  }
+
+  .groupCard {
+    place-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .cardBox {
+    flex-direction: initial;
+  }
+
+  .cardBox img {
+    width: 32%;
+  }
+
+  .cardBox h2 {
+    margin-block: auto;
+  }
+
+  .cardInfo {
+    flex-direction: initial;
+  }
+
+  .cardInfo img {
+    width: 32%;
+  }
+
+  .cardInfo p {
+    margin-bottom: 0;
+  }
+
+  .infoNotice {
+    margin-block: auto;
+  }
+}
