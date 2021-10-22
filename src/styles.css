@@ -38,6 +38,14 @@ a {
   margin: 15px 0;
 }
 
+.lineMobile {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #E6E6E6;
+  margin: 15px 0;
+}
+
 .lineRight {
   display: flex;
   height: 100%;
@@ -274,4 +282,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+.web {
+  display: flex;
 }

@@ -1,4 +1,44 @@
 @media (max-width: 1120px){
+  .menuOption {
+    gap: 40px;
+  }
+
+  .menuOption a {
+    font-size: 48px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .mobile img {
+    width: 350px;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .left h1 {
+    font-size: 72px;
+    line-height: 78px;
+    margin-top: 24px;
+  }
+
+  .left h4 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .line {
+    background: #cecece;
+    margin: 24px 0 24px;
+  }
+
   .notices {
     flex-direction: column;
   }
@@ -8,7 +48,19 @@
   }
 
   .groupCard {
+    flex-direction: column;
     place-content: center;
+  }
+
+  .groupCard a h3 {
+    font-size: 42px;
+    line-height: 72px;
+  }
+
+  .groupCard a p {
+    font-size: 38px;
+    line-height: 45px;
+    margin-bottom: 28px;
   }
 
   .card {
@@ -45,5 +97,58 @@
 
   .infoNotice {
     margin-block: auto;
+  }
+
+  .groupSection  {
+    flex-direction: column;
+    gap: 52px;
+  }
+
+  .section h4 {
+    font-size: 42px;
+    line-height: 72px;
+  }
+
+  .section a p {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .boxLeft a {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .boxLeft a img {
+    width: 100%;
+  }
+
+  .boxLeft a h2 {
+    font-size: 42px;
+    line-height: 72px;
+  }
+
+  .boxLeft a p {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .boxRight a {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .boxRight a img {
+    width: 100%;
+  }
+
+  .boxRight a h2 {
+    font-size: 42px;
+    line-height: 72px;
+  }
+
+  .boxRight a p {
+    font-size: 38px;
+    line-height: 45px;
   }
 }
