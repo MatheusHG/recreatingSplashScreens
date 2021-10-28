@@ -1,0 +1,79 @@
+@media (min-width: 980px){
+  .stories {
+    width: 585px;
+  }
+}
+
+@media (max-width: 980px){
+  .feedBox .right {
+    display: none;
+  }
+
+  .storiesFeed {
+    width: 100%;
+    place-content: center;
+  }
+
+  .stories {
+    padding: 23px 0;
+    max-width: 612px;
+  }
+
+  .post >img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .post >video {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 612px){
+  #a2, #a3, #a4 {
+    display: none;
+  }
+
+  .header input {
+    display: none;
+  }
+
+  .headerBox img:nth-last-child(1){
+    display: none;
+  }
+
+  .iconNext ion-icon {
+    display: none;
+  }
+
+  .headerBox span {
+    display: none;
+  }
+
+  .instaMobile {
+    display: flex;
+  }
+
+  .feedBox, .stories {
+    padding: 0;
+  }
+
+  .left {
+    align-items: flex-start;
+  }
+
+  .stories {
+    margin-top: 12px;
+    background: none;
+    border: 0;
+  }
+
+  .mMobile, .menuMobile {
+    display: flex;
+    z-index: 100;
+  }
+
+}

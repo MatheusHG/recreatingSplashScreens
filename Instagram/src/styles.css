@@ -1,0 +1,406 @@
+body{
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+button, a {
+  outline: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+  padding: 15px;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.header input {
+  background: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 30px;
+}
+
+.headerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.headerBox > div ion-icon{
+  font-size: 24px;
+}
+
+.instaMobile {
+  display: none;
+}
+
+.headerBox span {
+  width: 1px;
+  height: 25px;
+  background: #DBDBDB;
+}
+
+.groupButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.groupButtons button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button ion-icon, a ion-icon {
+  font-size: 24px;
+}
+
+.feed {
+  flex-direction: column;
+  background: #FAFAFA;
+}
+
+.feedBox {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  gap: 50px;
+  padding: 20px;
+}
+
+.feedBox .left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 3;
+  gap: 24px;
+  align-items: center;
+}
+
+.containerStories {
+  display: flex;
+  width: 80%;
+}
+
+.storiesFeed {
+  display: flex;
+}
+
+.stories {
+  display: flex;
+  background-color: #FFF;
+  padding: 23px 5px 23px 23px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  overflow-x: hidden; 
+}
+
+.stories button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.iconNext {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  right: 0;
+  font-size: 32px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.iconNext ion-icon {
+  flex: auto;
+  color: #FFF;
+  font-size: 36px;
+}
+
+.iconNext ion-icon:hover {
+  opacity: 0.9;
+}
+
+.boolStories {
+  display: flex;
+  width: 66px;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../image/stories_on.png');
+}
+
+.boolStories img {
+  border-radius: 30px;
+}
+
+.post {
+  display: flex;
+  width: 100%;
+  max-width: 612px;
+  flex-direction: column;
+  background: #FFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+}
+
+.post >img {
+  width: 612px;
+  height: 612px;
+}
+
+.post >video {
+  display: flex;
+  width: 612px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.title > div {
+  display: flex;
+  gap: 5px;
+}
+
+.title > div img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.title button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.iconsLike {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.iconsLike button {
+  display: flex;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.iconsGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.iconsGroup button {
+  display: flex;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.like {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0 14px 14px;
+}
+
+.like > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.feedBox .right {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  align-items: initial;
+}
+
+.right .userProfile {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.userProfile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.userProfile .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info span {
+  font-weight: lighter;
+  color: #b6b6b6;
+  font-size: 14px;
+}
+
+.info b {
+  font-size: 14px;
+}
+
+.detailsProfile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 17px;
+}
+
+.sugestionTitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.sugestionTitle p {
+  color: #8E8E8E;
+  font-weight: 600;
+}
+
+.sugestionTitle a {
+  color: #262626;
+  font-weight: 600;
+}
+
+.sugestionTitle a:hover {
+  opacity: 0.9;
+}
+
+.sugestionBody {
+  display: flex;
+  gap: 8px;
+}
+
+.infoSugestion {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-right: 80px;
+}
+
+.infoSugestion b {
+  font-size: 14px;
+  color: #262626;
+  font-weight: 600;
+}
+
+.infoSugestion span {
+  font-size: 12px;
+  color: #8E8E8E;
+}
+
+.follow {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #139EF2;
+  margin-left: auto;
+}
+
+.infoFooter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 18px;
+}
+
+.infoFooter div {
+  display: flex;
+  max-width: 60px;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.infoFooter div a {
+  color: #C7C7C7;
+}
+
+.infoFooter p {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #C7C7C7;
+}
+
+.mMobile {
+  display: none;
+  padding: 16px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #FFF;
+  z-index: 0;
+}
+
+.menuMobile {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFF;
+}
+
+.menuMobile a {
+  color: #000;
+}
